@@ -10,16 +10,24 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack (alignment: .leading){
-            Text("Carpark Availability")
+            Text("Carpark Name")
                 .font(.title)
-            HStack {
-                Text("Carpark Name")
-                Spacer()
-                Text("Count")
+            
+            VStack (alignment: .leading){
+                Text("Location")
+                Text("Type of lot")
             }
             .font(.subheadline)
             .foregroundColor(.secondary)
-            Spacer()
+            
+            Divider()
+            
+            HStack{
+                Text("Lots Available")
+                Text("/")
+                Text("Total Lots")
+            }
+            .font(.subheadline)
         }
     }
 }
