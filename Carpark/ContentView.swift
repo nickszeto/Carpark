@@ -7,9 +7,13 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     var body: some View {
         VStack (alignment: .leading){
+            MapView()
+                .frame(height: 300)
+            
             Text("Carpark Name")
                 .font(.title)
             
